@@ -13,7 +13,7 @@ class _ColumnWIdgetPageState extends State<ColumnWIdgetPage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(
-          'Hello Row',
+          'Hello Column',
           style: TextStyle(
             color: Colors.white,
             fontSize: 30,
