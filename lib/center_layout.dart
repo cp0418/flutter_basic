@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_layout/screens/home.dart';
 
 class CenterWidget extends StatefulWidget {
   CenterWidget({Key? key}) : super(key: key);
@@ -15,9 +16,20 @@ class _CenterWidgetState extends State<CenterWidget> {
         title: Text('Center Widget'),
       ),
       body: Center(
-        child: Text(
-          'Center Widget',
-          style: TextStyle(fontSize: 60.0, color: Colors.green),
+        child: Column(
+          children: [
+            Text(
+              'Center Widget',
+              style: TextStyle(fontSize: 60.0, color: Colors.green),
+            ),
+            RaisedButton(
+              onPressed: () {
+                Navigator.pushReplacement(
+                    context, MaterialPageRoute(builder: (context) => Home()));
+              },
+              child: Text('Back to menu'),
+            )
+          ],
         ),
       ),
     );
