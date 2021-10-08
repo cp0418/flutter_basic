@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_layout/align_layout.dart';
-import 'package:flutter_layout/center_layout.dart';
+import 'package:flutter_layout/screens/layouts/align_layout.dart';
+import 'package:flutter_layout/screens/layouts/center_layout.dart';
 import 'package:flutter_layout/components/menuBox.dart';
 
 class Home extends StatefulWidget {
